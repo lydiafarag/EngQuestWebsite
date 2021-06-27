@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Cutom Properties */
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-bg: #D2F0E9;
+    --clr-ptext: rgb(0, 0, 0);
+    --clr-htext: rgb(0,0,0);
+    --clr-bg-light: #D2F0E9;
+
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+.topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    color: white;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.logo{
+    font-family: var(--ff-secondary);
+
+}
+
+.logo{
+    font-family: var(--ff-secondary);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--clr-bg);
+    color: var(--clr-ptext);
+    margin:0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+.section{
+    padding: 5em 2em;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+strong {font-weight: var(--fw-bold)}
+
+:focus{
+    outline: 3px solid var(--clr-htext);
+    outline-offset: 3px ;
+}
+
+.btn{
+    display: inline-block;
+    padding:.5em 2.5em;
+    background:var(--clr-htext);
+    color: var(--clr-bg);
+    text-decoration: none;
+    cursor:  pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    margin-bottom: 2em;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+/* Typography */
+
+h1,
+h2, 
+h3{
+    line-height: 1;
+    margin:0;
+}
+
+h1{ font-size: var(--fs-h1)}
+h2{ font-size: var(--fs-h2)}
+h3{ font-size: var(--fs-h3)}
+
+
+
+.section__title{
+    margin-bottom: 0.25em;
+
+}
+.section__title--intro{
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong{
+    display: block;
+    color:#D2F0E9;
+}
+.section__subtitle{
+    margin: 0;
+    font-size: vat(--fs-h3);
+    
+}
+
+.section__subtitle--intro,
+.section__subtitle--about{
+    background:var(--clr-htext);
+    padding: .25em;
+    font-family:var(--ff-secondary);
+    margin-bottom: 1em;
+}
+/* header */
+
+.intro{
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro h3{
+    text-align: center;
+}
+.intro img{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.About-Us{
+    padding-top: 80px;
+    text-align: center;
+    align-items: center;
+}
+.About-us {
+    background-color: pink;
+    padding-bottom: 100px;
+}
+
+.puzzles{
+    background-image:url(/EngHacks/BackgroundPuzz.png);
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sudoku{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+.section__subtitle--Puzzles{
+    color: var(--clr-htext);
+    font-family: var(--ff-secondary);
+    margin-bottom:2em;
+}
+
+/* Skills */
+.my-skills {
+    text-align: center;
+    margin-top: 2em;
+
+}
+
+.section__title--skills {
+    color: var(--clr-bg);
+    position: relative;
+    background-color: var(--clr-htext);
+
+}
+
+.section__title--skills::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    opacity: 0.25;
+
+
+}
+
+.skills {
+    margin-bottom: 4em;
+}
+
+.skill {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+.skills img{
+    align-items: center;
+    align-content: center;
+    padding-right: auto;
+    padding-left: auto;
+
+
+}
+.skill .skills{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
